@@ -2,6 +2,7 @@ package ing.assessment.controller;
 
 import ing.assessment.db.order.Order;
 import ing.assessment.service.OrderService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -13,7 +14,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/orders")
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class OrderController {
 
     private final OrderService orderService;
@@ -29,7 +30,7 @@ public class OrderController {
     }
 
     @PostMapping
-    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
+    public ResponseEntity<Order> createOrder(@RequestBody @Valid Order order) {
         return new ResponseEntity<>(orderService.saveOrder(order), HttpStatus.CREATED);
     }
 

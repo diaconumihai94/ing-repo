@@ -7,3 +7,6 @@ INSERT INTO product (id, location, name, price, quantity) VALUES (2, 2, 'Shirt',
 INSERT INTO product (id, location, name, price, quantity) VALUES (3, 0, 'Jeans', 200.0, 50);
 INSERT INTO product (id, location, name, price, quantity) VALUES (3, 1, 'Jeans', 200.0, 50);
 INSERT INTO product (id, location, name, price, quantity) VALUES (3, 2, 'Jeans', 200.0, 50);
+INSERT INTO product (id, location, name, price, quantity) VALUES (4, 1, 'Cardigan', 200.0, 50);
+INSERT INTO product (id, location, name, price, quantity) VALUES (4, 0, 'Cardigan', 200.0, 50);
+INSERT INTO product (id, location, name, price, quantity) VALUES (5, 1, 'T-shirt', 200.0, 50);

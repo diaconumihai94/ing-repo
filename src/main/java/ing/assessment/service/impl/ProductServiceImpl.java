@@ -4,11 +4,11 @@ import ing.assessment.db.product.Product;
 import ing.assessment.db.repository.ProductRepository;
 import ing.assessment.service.ProductService;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
-
 
     private final ProductRepository productRepository;
 
